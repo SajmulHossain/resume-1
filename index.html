@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+
+        :root {
+            --clr: #dfd7d3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;;
+        }
+
+        body {
+            width: 100%;
+            max-width: 210mm;
+            margin: 0 auto;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            width: 720px;
+        }
+
+        .left-container {
+            width: 35%;
+            border: 1px solid black;
+            padding: 3rem 2rem;
+        }
+    
+
+        .img-container img{
+            width: 100%;
+        }
+
+        .contact {
+            margin: 2rem 0;
+        }
+
+        .contact div {
+            font-size: 14px;
+            font-weight: normal;
+            margin: .7rem 0;
+        }
+
+        .edu-head {
+            position: relative;
+            margin: 0 0 .8rem 0;
+        }
+
+        .edu-head .blank,
+        .expert-head .blank {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .edu-head .blank div,
+        .expert-head .blank div {
+            background-color: var(--clr);
+            width: 90%;
+            height: 30px;
+        }
+
+        .edu-head .edu-h-text {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            height: 30px;
+        }
+
+        .edu-desc div {
+            margin: 1rem 0;
+        }
+
+        .edu-desc div p {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .edu-desc div h6 {
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .expert-head {
+            position: relative;
+        }
+
+        .expert-head .exp-h-text {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            height: 30px;
+        }
+
+        .expert-desc {
+            margin: 2rem 0;
+        }
+
+        .expert-desc p {
+            font-size: 14px;
+            margin: 1rem 0;
+        }
+
+        .lang p {
+            margin: 1rem 0;
+            font-size: 14px;
+        }
+
+        .lang-desc {
+            margin: 2rem 0;
+        }
+
+
+        .right-container {
+            width: 65%;
+            padding: 3rem 2rem;
+            margin-top: 2rem;
+        }
+
+        .r-head h1 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .profile {
+            margin: 2rem 0;
+        }
+
+        .profile-icon {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience {
+            margin-top: 3rem;
+        }
+
+        .exp {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .vr-line {
+            width: 2px;
+            height: auto;
+            background-color: black;
+        }
+
+        .exp-desc p {
+            margin: .3rem 0;
+            font-size: 14px;
+        }
+
+        .exp-desc ul {
+            list-style-position: inside;
+            font-size: 14px;
+            margin: 1rem 0 0 .6rem;
+        }
+
+        .exp-desc ul li {
+            margin: .5rem 0;
+        }
+
+        .ref-main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .ref-head {
+            margin-bottom: 2rem;
+        }
+
+        .ref-l h3 {
+            font-size: 18px;
+        }
+
+        .ref-l p {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: .6rem;
+        }
+
+        .none {
+            width: 720px;
+            height: 115px;
+            background-color: var(--clr);
+            position: absolute;
+            z-index: -1;
+        }
+
+        .social-icon {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icon div a {
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+
+        <div class="none"></div>
+        
+        <section class="left-container">
+            <div class="img-container">
+                <img src="https://media-ccu1-1.cdn.whatsapp.net/v/t61.24694-24/421065773_443511348306489_1068835983112319760_n.jpg?ccb=11-4&oh=01_Q5AaIP3ftabL55UsX3SIVfu63rBnWygFqXETazATH8mL1J0d&oe=66794B11&_nc_sid=e6ed6c&_nc_cat=102" alt="">
+            </div>
+
+            <div class="contact">
+                <div><i class="fa-solid fa-phone"></i> +123-456-7890 </div>
+                <div><i class="fa-solid fa-envelope"></i> hello@gmail.com </div>
+                <div><i class="fa-solid fa-location-dot"> </i>123 Anywhere St. Any City, st 1234</div>
+            </div>
+
+            <section class="education">
+                <div class="edu-head">
+                    <div class="blank"><div></div></div>
+                    <div class="edu-h-text"><h3>Education</h3></div>                    
+                </div>
+
+                <div class="edu-desc">
+                    <div>
+                        <h4>Bachelor of Design</h4>
+                        <p>Chittagong Commerce College</p>
+                        <h6>2006-2008</h6>
+                    </div>
+                    <div>
+                        <h4>Bachelor of Design</h4>
+                        <p>Chittagong Commerce College</p>
+                        <h6>2006-2008</h6>
+                    </div>
+                </div>
+            </section>
+
+            <section class="expertise">
+                <div class="expert-head">
+                    <div class="blank"><div></div></div>
+                    <div class="exp-h-text"><h3>Expertise</h3></div>                    
+                </div>
+
+                <div class="expert-desc">
+                    <p>Digital Marketing</p>
+                    <p>Branding</p>
+                    <p>Copyrighing</p>
+                    <p>SEO</p>
+                </div>
+            </section>
+
+            <section class="lang">
+                <div class="expert-head">
+                    <div class="blank"><div></div></div>
+                    <div class="exp-h-text"><h3>Language</h3></div>                    
+                </div>
+
+                <div class="lang-desc">
+                    <p>English</p>
+                    <p>Bangla</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="right-container">
+
+            <div class="r-head">
+                <h1>Nazmul Hossain</h1>
+                <p>Graphics Designer</p>
+            </div>
+
+            <div class="social-icon">
+                <div>
+                    <a href="facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div>
+                    <a href="facebook.com"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div>
+                    <a href="facebook.com"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div>
+                    <a href="facebook.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                
+            </div>
+
+            <section class="profile">
+                <div class="profile-icon">
+                    <h3><i class="fa-solid fa-user"></i>&nbsp; &nbsp; Profile</h3>
+                </div>
+
+                <div class="profile-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quas blanditiis fuga quisquam voluptas nobis, exercitationem adipisci nisi laborum tenetur porro iure placeat, dignissimos praesentium minima temporibus. Quidem reiciendis beatae velit quisquam fugiat voluptate magnam maiores tempora, ratione dolor tenetur unde architecto eum sapiente impedit nobis doloribus maxime expedita quae!</p>
+                </div>
+
+                
+            </section>
+
+            <section class="experience">
+                <div class="exp-icon">
+                    <h3><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+                </div>
+
+                <div class="exp-container">
+
+                    <div class="exp">
+                        <div class="exp-year">
+                            <h4>2020-2023</h4>
+                        </div>
+
+                        <div class="vr-line"></div>
+
+                        <div class="exp-desc">
+                            <h3>Ginyard International Co.</h3>
+                            <p>Product Design Manager</p>
+
+                            <ul>
+                                <li>Working With the winder development team</li>
+                                <li>Manage website design, content, and SEO marketing, Branding and Logo design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp">
+                        <div class="exp-year">
+                            <h4>2020-2023</h4>
+                        </div>
+
+                        <div class="vr-line"></div>
+
+                        <div class="exp-desc">
+                            <h3>Ginyard International Co.</h3>
+                            <p>Product Design Manager</p>
+
+                            <ul>
+                                <li>Working With the winder development team</li>
+                                <li>Manage website design, content, and SEO marketing, Branding and Logo design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp">
+                        <div class="exp-year">
+                            <h4>2020-2023</h4>
+                        </div>
+
+                        <div class="vr-line"></div>
+
+                        <div class="exp-desc">
+                            <h3>Ginyard International Co.</h3>
+                            <p>Product Design Manager</p>
+
+                            <ul>
+                                <li>Working With the winder development team</li>
+                                <li>Manage website design, content, and SEO marketing, Branding and Logo design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="exp">
+                        <div class="exp-year">
+                            <h4>2020-2023</h4>
+                        </div>
+
+                        <div class="vr-line"></div>
+
+                        <div class="exp-desc">
+                            <h3>Ginyard International Co.</h3>
+                            <p>Product Design Manager</p>
+
+                            <ul>
+                                <li>Working With the winder development team</li>
+                                <li>Manage website design, content, and SEO marketing, Branding and Logo design</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="refer">
+                <div class="ref-head">
+                    <h3><i class="fa-solid fa-book-open-reader"></i> References</h3>
+                </div>
+
+                <div class="ref-main">
+                    <div class="ref-l">
+                        <h3>Baily Dupont</h3>
+                        <p>Wardiere Inc. / CEO</p>
+
+                        <div class="ref-contact">
+                            <div class="mobile">
+                                <h5>Phone: </h5>
+                                <p>123-456-7890</p>
+
+                                <h5>Email</h5>
+                                <p>hello@gmail.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="ref-l">
+                        <h3>Baily Dupont</h3>
+                        <p>Wardiere Inc. / CEO</p>
+
+                        <div class="ref-contact">
+                            <div class="mobile">
+                                <h5>Phone: </h5>
+                                <p>123-456-7890</p>
+
+                                <h5>Email</h5>
+                                <p>hello@gmail.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </section>
+    </main>
+
+
+</body>
+</html>
